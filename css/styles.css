@@ -302,7 +302,7 @@ body {
     margin-bottom: 8px;
 }
 
-.icon-item {
+.icon-item{
     fill: var(--cloud);
     background-color: var(--iris);
     width: 40px;
@@ -315,6 +315,14 @@ body {
 
     transition-property: background-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-item .link {
+    fill: var(--cloud);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-item:hover {
@@ -423,7 +431,7 @@ body {
     color: var(--cloud);
 }
 
-.footer-p {
+.footer-text {
     color: var(--cloud);
     width: 264px;
     margin-top: 16px;
