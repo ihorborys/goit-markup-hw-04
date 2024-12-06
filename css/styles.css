@@ -69,6 +69,7 @@ body {
     color: var(--iris);
     border-bottom: 1px solid var(--cornflower);
     background-color: var(--white);
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -120,14 +121,18 @@ body {
     gap: 40px;
 }
 
+.header-menu-item {
+    position: relative;
+}
+
 .header-menu-link {
-    color: var(--navy-blue);
     display: block;
     padding: 24px 0;
 }
 
-.header-menu-item {
-    position: relative;
+.header-menu-link.active {
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link.active::after {
@@ -169,6 +174,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover,
@@ -182,7 +189,7 @@ body {
     padding: 188px 0;
 
     background-color: var(--navy-blue);
-    background-image: linear-gradient(var(--grey), var(--grey)), url("../images/hero/people-office 1.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office 1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -223,7 +230,6 @@ body {
     min-width: 169px;
     height: 56px;
 
-    /*transition-property: background-color;*/
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -328,8 +334,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    transition-property: background-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-item .link:hover,
@@ -353,7 +358,7 @@ body {
 .item-portfolio {
     width: calc((100% - (var(--three-items) - 1) * var(--column-gap)) / var(--three-items));
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .item-portfolio:hover .overlay {
