@@ -117,13 +117,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
     gap: 40px;
 }
 
 .header-menu-link {
     display: block;
     padding: 24px 0;
+    color: var(--navy-blue);
 }
 
 .header-menu-link.active {
